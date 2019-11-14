@@ -4,6 +4,7 @@ import FormField from "../components/Atom/FormField";
 import PageContainer from "../components/Atom/PageContainer";
 import HorizontalNav from "../components/Molecule/HorizontalNav";
 import Trips from "../components/Molecule/Trips";
+import profilepic from "../images/profilepic.jpg";
 
 function Profile() {
   const formfieldValues = [
@@ -42,13 +43,13 @@ function Profile() {
       <div className="container no-gutters my-3 mx-auto">
         welcome to Profile page
         <Cardiv opac="0.45" blurpixels="5px" className="card d-flex px-2">
-          <div className="row mx-2 my-3 py-2">
+          <div className="row d-flex flex-row align-items-center mx-2 py-2">
             <img
-              src=""
+              src={profilepic}
               alt="profile image"
-              className="rounded rounded-circle mx-1"
+              className="rounded rounded-circle mx-1 w-10percent"
             />
-            <button className="rounded border border-dark bg-dark text-light mx-1">
+            <button className="rounded border border-dark bg-dark text-light mx-1 h-25">
               Edit Profile
             </button>
           </div>
@@ -64,7 +65,7 @@ function Profile() {
               ))}
             </div>
             <div className="col-4">
-              <div className="row my-3">Previous Experience</div>
+              <h5 className="mb-4 text-left">Previous Experience</h5>
               <Trips logo="trips" name="Small trips" />
               <Trips logo="dest" name="Destinations" />
             </div>

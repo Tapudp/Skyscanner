@@ -21,3 +21,7 @@ code {
 .customBorderColor {
   border-color: #000000;
 }
+
+.w-10percent {
+  width: 10%;
+}

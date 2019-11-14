@@ -94,12 +94,12 @@ const CustomCard = styled.div`
   background-size: contain;
   background-position: center;
   background: no-repeat;
-  background-color: rgba(255, 255, 255, ${props => props.opac});
-  backdrop-filter: blur(${props => props.blurpixels});
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
   min-height: 150px;
   max-height: 150px;
   min-width: 100%;
-  max-width: 120px;
+  max-width: 110%;
 `;
 
 export default Library;

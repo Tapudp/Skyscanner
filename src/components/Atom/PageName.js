@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 function PageName(props) {
   const { name } = props;
+  const location = useLocation();
   return (
     <PageNameContainer>
       <Link
